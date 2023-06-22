@@ -11,7 +11,13 @@ import reportWebVitals from './reportWebVitals';
 //   </React.StrictMode>
 // );
 
-const  X = () => <p>Hola mundo</p>
+const  X = () =>
+    <ul>
+        <li>Chanchito Feliz</li>
+        <li>Chanchito Triste</li>
+        <li>Miguel</li>
+    </ul>
+
 ReactDOM.render(
     <X />, document.getElementById('root')
 )
