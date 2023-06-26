@@ -1,24 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+const Li = ({children, estado}) => {
+    console.log(estado)
+    return (
+        <li>{children}</li>
+    )
+}
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+     <ul className='clase-css'>
+       <Li estado='feliz'>Holi</Li>
+     </ul>
   );
 }
 
